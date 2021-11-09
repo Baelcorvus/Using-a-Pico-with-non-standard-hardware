@@ -57,9 +57,13 @@ Then when you make the code the correct board will be used.
 A more useful way of doing this is to add a line in your CMakeLists.txt file that instructs cmake how to compile the source.
 
 if you add:
+
 set ( ENV{PICO_BOARD} myboard )
+
 at the top of your CMakeLists.txt file (I have included a simple example in the repository) when you run cmake on the project it will set the correct board to comile to.
 
 So, to compile the code for the adafruit QT RP2040, add:
+
 set ( ENV{PICO_BOARD} adafruit_qtpy_rp2040 )
+
 to your CMakeLists.txt fie
