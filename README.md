@@ -1,18 +1,18 @@
 # Using a Pico with non standard hardware
- Configuring cmake to compile C++ source on a non standard PICO boad such as the adafruit QT RP2040
+ Configuring cmake to compile C++ source on a non standard PICO board such as the adafruit QT RP2040
 
 The Raspberry Pi Pico is a great microcontroller for embedded applications. 
-There are several different boards designed arround the RP2040 chip. These have different hardware than the standard board. 
-The Adafruit QT RP2040, for example, has a NeoPixel LED rather than a simiple LED and a different flash memory from the standard board. 
+There are several different boards designed around the RP2040 chip. These have different hardware than the standard board. 
+The Adafruit QT RP2040, for example, has a NeoPixel LED rather than a simple LED and a different flash memory from the standard board. 
 In order for your code to compile correctly the board type must be selected in the cmake build.
 
 The PDF for the pico-sdk has a short section on using other boards and this small repository is designed to elaborate a little on how to easily implement the correct board.
 
 When cmake is executed it looks at an ENV variable - in this case PICO_BOARD - to see if is defined. If it is not it defaults to the standard (pico.h).
-To compile for a differnt board you set this ENV variable.
+To compile for a different board you set this ENV variable.
 
 One reason to do this is to easily use the onboard peripherals and to write code that can be ported to different boards.
-Also (importantly) you need to set this so the Pico auto starts the code on reset. For example, code compiled using the standard Pico board will run once when you flash tha board, but when reset the pico may not run the code again.
+Also (importantly) you need to set this so the Pico auto starts the code on reset. For example, code compiled using the standard Pico board will run once when you flash the board, but when reset the pico may not run the code again.
 
 The pico-sdk pdf (https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf) says that you can do this by executing 
 cmake -D"PICO_BOARD=myboard" ..
@@ -48,7 +48,7 @@ At the time of writing the current supported boards are:
 
 The supported list appears in pico-sdk/src/boards/include/boards/
 
-so, to comfigure your build to use an adafruit QT RP2040, you can navigate tou your_project/build directory and execute:
+so, to comfigure your build to use an adafruit QT RP2040, you can navigate touto your_project/build directory and execute:
 
 cmake -D"PICO_BOARD=adafruit_qtpy_rp2040" ..
 
@@ -60,7 +60,7 @@ if you add:
 
 set ( ENV{PICO_BOARD} myboard )
 
-at the top of your CMakeLists.txt file (I have included a simple example in the repository) when you run cmake on the project it will set the correct board to comile to.
+at the top of your CMakeLists.txt file (I have included a simple example in the repository) when you run cmake on the project it will set the correct board to compile to.
 
 So, to compile the code for the adafruit QT RP2040, add:
 
