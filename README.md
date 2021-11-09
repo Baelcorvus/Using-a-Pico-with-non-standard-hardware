@@ -48,7 +48,7 @@ At the time of writing the current supported boards are:
 
 The supported list appears in pico-sdk/src/boards/include/boards/
 
-so, to comfigure your build to use an adafruit QT RP2040, you can navigate touto your_project/build directory and execute:
+so, to comfigure your build to use an adafruit QT RP2040, you can navigate into your_project/build directory and execute:
 
 cmake -D"PICO_BOARD=adafruit_qtpy_rp2040" ..
 
