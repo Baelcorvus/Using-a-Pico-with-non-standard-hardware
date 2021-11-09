@@ -20,31 +20,31 @@ in the build directory.
 This sets the correct board for the compiler.
 
 At the time of writing the current supported boards are:
-* adafruit_feather_rp2040.h
-* adafruit_itsybitsy_rp2040.h
-* adafruit_qtpy_rp2040.h
-* adafruit_trinkey_qt2040.h
-* arduino_nano_rp2040_connect.h
-* melopero_shake_rp2040.h
-* none.h
-* pico.h
-* pimoroni_interstate75.h
-* pimoroni_keybow2040.h
-* pimoroni_pga2040.h
-* pimoroni_picolipo_16mb.h
-* pimoroni_picolipo_4mb.h
-* pimoroni_picosystem.h
-* pimoroni_plasma2040.h
-* pimoroni_tiny2040.h
-* pybstick26_rp2040.h
-* sparkfun_micromod.h
-* sparkfun_promicro.h
-* sparkfun_thingplus.h
-* vgaboard.h
-* waveshare_rp2040_lcd_0.96.h
-* waveshare_rp2040_plus_16mb.h
-* waveshare_rp2040_plus_4mb.h
-* waveshare_rp2040_zero.h
+adafruit_feather_rp2040.h
+adafruit_itsybitsy_rp2040.h
+adafruit_qtpy_rp2040.h
+adafruit_trinkey_qt2040.h
+arduino_nano_rp2040_connect.h
+melopero_shake_rp2040.h
+none.h
+pico.h
+pimoroni_interstate75.h
+pimoroni_keybow2040.h
+pimoroni_pga2040.h
+pimoroni_picolipo_16mb.h
+pimoroni_picolipo_4mb.h
+pimoroni_picosystem.h
+pimoroni_plasma2040.h
+pimoroni_tiny2040.h
+pybstick26_rp2040.h
+sparkfun_micromod.h
+sparkfun_promicro.h
+sparkfun_thingplus.h
+vgaboard.h
+waveshare_rp2040_lcd_0.96.h
+waveshare_rp2040_plus_16mb.h
+waveshare_rp2040_plus_4mb.h
+waveshare_rp2040_zero.h
 
 The supported list appears in pico-sdk/src/boards/include/boards/
 
